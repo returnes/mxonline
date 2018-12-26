@@ -1,0 +1,30 @@
+{% extends 'org-base.html' %}
+{% block title %}机构介绍{% endblock %}
+{% block css %}{% endblock %}
+{% block js %}{% endblock %}
+{% block path %}机构介绍{% endblock %}
+
+{% block right %}
+    <div class="right companycenter layout">
+        <div class="head">
+            <h1>机构介绍</h1>
+        </div>
+        <div class="des">
+            <p>
+            <p>&nbsp; &nbsp;</p>
+            <h1 class="ue_t" label="Title center" name="tc"
+                style="border-bottom-color:#cccccc;border-bottom-width:2px;border-bottom-style:solid;padding:0px 4px 0px 0px;text-align:center;margin:0px 0px 20px;">
+                <span style="color:#c0504d;">{{ course_org.name }}</span></h1>
+            <p class="ue_t" style="text-indent:2em;"><img src="{{ MEDIA_URL }}{{ course_org.image }}" title=""
+                                                          alt="57aa86a0000145c512000460.jpg"/></p>
+            <p class="ue_t"><br/>{{ course_org.disc }}</p>
+            <h3><span class="ue_t" style="font-family:幼圆">地址：{{ course_org.address }}</span></h3>
+            <p>
+            <img src="http://api.map.baidu.com/staticimage?center=116.410899,39.863624&zoom=11&width=530&height=340&markers=116.404,39.915"
+                     width="530" height="340"/></p>
+            <p class="ue_t" style="text-indent:2em;"></p>
+            </p>
+
+        </div>
+    </div>
+{% endblock %}
