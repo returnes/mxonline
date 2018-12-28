@@ -1,0 +1,4 @@
+#!C:\Users\noc\PycharmProjects\mxonline\venv\Scripts\python.exe
+# EASY-INSTALL-SCRIPT: 'odfpy==1.3.6','odfmeta'
+__requires__ = 'odfpy==1.3.6'
+__import__('pkg_resources').run_script('odfpy==1.3.6', 'odfmeta')
